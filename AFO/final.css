@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fac1fa1f;
+}
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid rgb(59, 2, 2);
+}
+header {
+    background-color: #dabcf85b;
+    color: rgb(240, 13, 13);
+    padding: 2px;
+    text-align: left;
+    border-radius: 10px;
+    text-shadow: 2px 2px white;
+  } 
+h1 {
+    text-align: left;
+}
+h2 {
+    text-align: center;
+    color: rgb(56, 5, 100);
+}
+header > img{
+    border-radius: 10px;
+    margin: 5px;
+    width: 6%;
+    height: auto;
+    float: left;
+}
+.clearright {
+    clear: right;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+nav > div {
+    background-color: #ddd8ff;
+    margin: 30px;
+    padding: 7px;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+nav > div > a {
+    color: rgb(37, 9, 104);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+nav > div > a:hover {
+    color: rgb(245, 23, 23);
+    text-decoration: none;
+}
+main {
+    display: flex;
+}
+main > div {
+    background-color: #fde0dd;
+    margin: 10px;
+    padding: 10px;
+}
+.left {
+    flex: 1;
+    background-color: #ed7df87f;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.left > img {
+    width: 75%;
+    height: auto;
+    margin: 20px;
+}
+.center {
+    flex: 1;
+    background-color:#fde0dd;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.center > img {
+    width: 75%;
+    height: auto;
+    margin: 20px;
+}
+.right {
+    flex: 1;
+    background-color: #fde0dd;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+.right > img {
+    width: 75%;
+    height: auto;
+    margin: 20px;
+}
+h3 {
+    text-align: center;
+    color: rgb(153, 6, 6);
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 10em;
+    padding-right: 1em;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 2em;
+}
+input[type="submit"] {
+    margin-left: 13.2em;
+}
+.about_left {
+    font-size: 20px;
+    font-weight: bolder;
+    flex: 1;
+    background-image: url("about.jpg");
+}
+.about {
+    flex: 1;
+    text-align: center;
+}
+.contactUs {
+    flex: auto;
+    text-align: center;
+    color: rgb(11, 11, 11);
+}
+
+h5 {
+    text-align: left;
+    text-indent: 100px;
+    font-size: 22px;
+    color: #1e41ec;
+}
+.left_category {
+    text-align: center;
+    flex: 1;
+    background-color: #fbd9fb03;
+}
+.left_category > h3 {
+    text-align: center;
+    color: #563bc4;
+}
+.center_category {
+    flex: 2;
+}
+.center_category > img {
+    width: 95%;
+    height: auto;
+    margin: 13px;
+}
+.right_category {
+    flex: 2;
+}
+.right_category > img {
+    width: 95%;
+    height: auto;
+    margin: 13px;
+}
+h4 {
+    text-align: left;
+    color: #b030eb;
+    padding: 2em;
+}
+.cart_left {
+    flex: 1;
+    background-color: rgba(251, 244, 244, 0.11);
+}
+.cart_right {
+    flex: 2;
+    color: black;
+    background-color: rgba(251, 244, 244, 0.11);
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    background-color: #b030eb;
+    margin: 3px;
+    padding: 3px;
+    color: white;
+}
+footer p {
+    text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        width: 100%;
+        border: none    ;
+    }
+    header > img {
+        width: 25%;
+        height: auto;
+        float: right;
+    }
+}
+@media only screen and (max-width: 510px) {
+
+    nav {
+        flex-direction: column;
+    }   
+    main {
+        flex-direction: column;
+    }   
+    nav > div {
+        width: auto;
+        margin: 5px;
+    }
+    main > div {
+        margin: 5px;
+    }
+    header > img {
+        width: 40%;
+        height: 5%;
+        float: left;
+    }
+    .left > img {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin: 0;
+    }
+}
